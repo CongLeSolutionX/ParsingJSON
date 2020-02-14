@@ -9,19 +9,26 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    @IBOutlet weak var detailTableView: UITableView!
-   
-    var currentAlbum: PhotoInfo?
     
+
+    @IBOutlet weak var detailImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-       // viewModel.detailViewDelegate = self as! delegate 
-       // detailTableView.dataSource = self as UITableViewDataSource
-      print("heoo from detail view controller")
-    }
-    
-    
-    
 
+        
+    }
+
+    
+    
+    var currentAlbum: PhotoInfo!{
+        didSet {
+            // download small img
+                      guard let smallUrl = URL(string: currentAlbum.url ?? "No Big Image") else {return }
+                      smallUrl.downloadImage{[weak self] gotBigImg in
+                          self?.detailImage.image = gotBigImg
+                   
+        }
+    }
 }
 
+}

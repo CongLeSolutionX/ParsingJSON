@@ -9,29 +9,29 @@
 import UIKit
 
 class ListViewController: UIViewController {
-
+    
     @IBOutlet weak var listTableView: UITableView!
     
-     var viewModel: ViewModel! //dependency injection
+    var viewModel: ViewModel! //dependency injection
     
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.listViewDelegate = self
-    
-
+        
+        
     }
-   
-
+    
+    
 }
 
 extension ListViewController: UITableViewDataSource{
     
     // number of row
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("List count: \(viewModel.albums.count)")
         return viewModel.albums.count
     }
-     // configure a cell
+    // configure a cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ListViewCell.identifier, for: indexPath) as? ListViewCell else{
             fatalError("The dequeued cell is not an instance of ListViewCell.")
@@ -46,19 +46,15 @@ extension ListViewController: UITableViewDataSource{
 
 
 extension ListViewController: UITableViewDelegate{
+    
     // handle the touch event on each cell
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-//        let currentAlbum = viewModel.albums[indexPath.row]
-//        viewModel.albums = [currentAlbum]
-//       // goToDetail(with: viewModel)
-//        print("hello from list")
-//
-        
         let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         detailVC.currentAlbum = viewModel.albums[indexPath.row]
-        navigationController?.pushViewController(detailVC, animated: true)
+        
+        present(detailVC, animated: true )
         
         
     }

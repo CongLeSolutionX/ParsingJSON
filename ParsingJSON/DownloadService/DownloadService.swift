@@ -49,7 +49,28 @@ final class DownloadService {
     }
     
     
-    
+    //MARK: get an big image from its url string
+    func getBigImage(_ imageUrl:String, completion: @escaping (UIImage?) -> Void){
+           guard let url:URL = URL(string: imageUrl) else{
+               completion(nil)
+               return
+           }
+           URLSession.shared.dataTask(with: url){ (data,_,err) in
+               if let error = err {
+                   print(error.localizedDescription)
+                   completion(nil)
+                   return
+               }
+               if let myData = data {
+                   let image = UIImage(data: myData)
+                   DispatchQueue.main.async{
+                      completion(image)
+                   }
+                   return
+               }
+               
+           }.resume()
+       }
 }
 
 

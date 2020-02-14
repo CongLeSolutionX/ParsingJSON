@@ -14,8 +14,6 @@ class ViewModel{
     weak var listViewDelegate: delegate?
     weak var gridViewDelegate: delegate?
   
-    //var currentAlbum: PhotoInfo! 
-    
     
     var albums: [PhotoInfo] = [] {
            didSet{
@@ -25,12 +23,10 @@ class ViewModel{
        }
     init(){
         downloadServiceShared.downloadJSONData{[weak self] results in
-           
                 self?.albums = results
             
         }
     }
-    
     func getAlbums() -> [PhotoInfo]{
         return albums
     }
