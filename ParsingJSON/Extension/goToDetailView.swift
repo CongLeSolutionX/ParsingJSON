@@ -2,9 +2,10 @@
 //  goToDetailView.swift
 //  ParsingJSON
 //
-//  Created by Consultant on 2/13/20.
-//  Copyright © 2020 Enhance IT. All rights reserved.
+//  Created by Cong Le on 2/12/20.
+//  Copyright © 2020 CongLeSolutionX. All rights reserved.
 //
+
 
 import UIKit
 ////

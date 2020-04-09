@@ -1,0 +1,17 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "4e86d484499b74c642ba6d91b21e6993"
+build_time: [1586463011, 192618000]
+inputs:
+  "/Users/congle/Desktop/DEVELOPMENTS/ParsingJSON/ParsingJSON/Model/Data.swift": [1586462901, 103639304]
+  "/Users/congle/Desktop/DEVELOPMENTS/ParsingJSON/ParsingJSON/Extension/downloadImage.swift": [1586462901, 103121146]
+  "/Users/congle/Desktop/DEVELOPMENTS/ParsingJSON/ParsingJSON/Extension/goToDetailView.swift": [1586462901, 103277547]
+  "/Users/congle/Desktop/DEVELOPMENTS/ParsingJSON/ParsingJSON/DownloadService/DownloadService.swift": [1586462901, 102874763]
+  "/Users/congle/Desktop/DEVELOPMENTS/ParsingJSON/ParsingJSON/View/GridViewCell.swift": [1586462901, 105283263]
+  "/Users/congle/Desktop/DEVELOPMENTS/ParsingJSON/ParsingJSON/ViewController/HomeViewController.swift": [1586462901, 106002167]
+  "/Users/congle/Desktop/DEVELOPMENTS/ParsingJSON/ParsingJSON/ViewController/GridViewController.swift": [1586462901, 105842782]
+  "/Users/congle/Desktop/DEVELOPMENTS/ParsingJSON/ParsingJSON/AppDelegate.swift": [1586462901, 101949759]
+  "/Users/congle/Desktop/DEVELOPMENTS/ParsingJSON/ParsingJSON/ViewController/ListViewController.swift": [1586462901, 106173771]
+  "/Users/congle/Desktop/DEVELOPMENTS/ParsingJSON/ParsingJSON/View/ListViewCell.swift": [1586462901, 105432931]
+  "/Users/congle/Desktop/DEVELOPMENTS/ParsingJSON/ParsingJSON/ViewModel/ViewModel.swift": [1586462901, 106426303]
+  "/Users/congle/Desktop/DEVELOPMENTS/ParsingJSON/ParsingJSON/SceneDelegate.swift": [1586462901, 104289677]
+  "/Users/congle/Desktop/DEVELOPMENTS/ParsingJSON/ParsingJSON/ViewController/DetailViewController.swift": [1586462901, 105663116]
