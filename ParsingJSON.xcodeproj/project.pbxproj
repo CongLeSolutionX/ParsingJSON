@@ -25,6 +25,7 @@
 		0281377723F5AAFD00763AC6 /* goToDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0281377623F5AAFD00763AC6 /* goToDetailView.swift */; };
 		02BE4FD323F3F271009867E0 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE4FD223F3F271009867E0 /* DownloadService.swift */; };
 		02DEB80E23F431DE00154E06 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DEB80D23F431DE00154E06 /* ListViewController.swift */; };
+		4C100AD5243FB9DA00D7B160 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4C100AD4243FB9DA00D7B160 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		0281377623F5AAFD00763AC6 /* goToDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goToDetailView.swift; sourceTree = "<group>"; };
 		02BE4FD223F3F271009867E0 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 		02DEB80D23F431DE00154E06 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		4C100AD4243FB9DA00D7B160 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		023D25EF23F359DD00D5B4FE = {
 			isa = PBXGroup;
 			children = (
+				4C100AD4243FB9DA00D7B160 /* README.md */,
 				023D25FA23F359DD00D5B4FE /* ParsingJSON */,
 				023D261423F359DF00D5B4FE /* ParsingJSONTests */,
 				023D261F23F359DF00D5B4FE /* ParsingJSONUITests */,
@@ -278,7 +281,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "Enhance IT";
+				ORGANIZATIONNAME = CongLeSolutionX;
 				TargetAttributes = {
 					023D25F723F359DD00D5B4FE = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -320,6 +323,7 @@
 			files = (
 				023D260B23F359DF00D5B4FE /* LaunchScreen.storyboard in Resources */,
 				023D260823F359DF00D5B4FE /* Assets.xcassets in Resources */,
+				4C100AD5243FB9DA00D7B160 /* README.md in Resources */,
 				023D260323F359DD00D5B4FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,11 +537,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = ParsingJSON/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.CongLe.EnhanceIT.ParsingJSON;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.CongLe.ParsingJSON;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -551,11 +556,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = ParsingJSON/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.CongLe.EnhanceIT.ParsingJSON;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.CongLe.ParsingJSON;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -570,7 +576,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = ParsingJSONTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,7 +598,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = ParsingJSONTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -613,6 +619,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = ParsingJSONUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -633,6 +640,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = ParsingJSONUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
