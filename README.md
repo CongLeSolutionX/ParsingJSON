@@ -5,11 +5,11 @@ A Swift project demonstrates how to parsing JSON using API request and display o
 
 ### List View: 
 
-![ListView](/screenshots/ListView.png)
+![ListView](/screenshots/ListView.png?raw=true)
 
 
 
 ### Grid View: 
 
-![GridView](/screenshots/GridView.png) 
+![GridView](/screenshots/GridView.png?raw=true) 
 
